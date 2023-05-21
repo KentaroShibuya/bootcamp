@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../bootcamp/assets/styles/style_10.css">
+</head>
+
+<body>
+  <p style="color: red;">通常の文字が始まる位置</p>
+  <!-- List style type  -->
+  <!-- ul/olのプロパティ defaultで良い時はdisc,decimal不要-->
+  <ul id="ls-disc">Unordered List
+    <li>disc *defaultのスタイル</li>
+  </ul>
+  <ul id="ls-circle">
+    <li>circle</li>
+  </ul>
+  <ul id="ls-square">
+    <li>square</li>
+  </ul>
+
+  <ol class="decimal">Ordered List
+    <li>ただのDecimalはOrdered listのdefaultスタイル</li>
+    <li>Decimal leading zeroは頭に0がつく</li>
+  </ol>
+  <ol class="upper-alpha">
+    <li>upper-alpha</li>
+  </ol>
+  <ol class="lower-alpha">
+    <li>lower-alpha</li>
+  </ol>
+  <ol class="upper-roman">
+    <li>upper-roman</li>
+  </ol>
+  <ol class="lower-roman">
+    <li>upper-roman</li>
+  </ol>
+  <hr>
+  <!-- list style position -->
+  <p style="color: red;">通常の文字が始まる位置</p>
+  <ul class="ul-outside">Outside
+    <li>defaultと同じスタイル。文章の最初の文字よりも外側にマークが付く。<br>２行目以降は文章の先頭に合わせて記載される。
+    </li>
+  </ul>
+  <ol class="ul-inside">Inside
+    <li>文の先頭の外側ではなく、文字の先頭と同じ位置にマークがくる。文字はさらに内側に入ったところから始まり、<br>２行目以降はマークと同じ位置から始まる。
+    </li>
+  </ol>
+    <hr>
+  <!-- list-styleとpositionを同時に -->
+  <ol id="ls">list-styleプロパティでtypeとpositionを一気に指定できる
+    <li>Order list</li>
+    <li>Upper-alphaを使用</li>
+    <li>Outside position</li>
+  </ol>
+  </ul>
+  <hr><br>
+
+  <!-- background-image -->
+  <h3 class="bg-image">background image</h3>
+  <!-- background-repeat -->
+  <h3 id=bgtitle>background repeat</h3>
+  <h3 class="bg-norepeat">no repeat</h3>
+  <h3 class="repeat-y">repeat-y</h3>
+  <h3 class="repeat-x">repeat-x</h3>
+  <h3 class="repeat">repeat = default</h3>
+  <hr>
+
+  <!-- background-size -->
+  <h2>background-size</h2>
+  <h2 class=bgsize-auto>auto<br>元画像通りのサイズ　画像が要素より小さい場合は余白は繰返し</h2>
+  <h2 class=bgsize-cover>cover<br>左(デフォルト)を基準に縦横比はそのまま要素サイズに合わせて引き伸ばし　入りきらない部分は切り取り</h2>
+  <h2 class=bgsize-contain>contain<br>要素の幅に合わせて表示　要素の余りは繰返し表示</h2>
+  <hr>
+
+<!-- 
+  <p>contain</p>
+  <div style="height: 500px; background-color: darkblue;" class="bg-size-contain" >
+  </div>
+  <p>300px x 400px</p>
+  <div style="height: 500px; background-color: darkblue;" class="bg-size-300px-400px" >
+  </div> -->
+  
+
+  <!-- background-position -->
+  <h1>Background Position</h1>
+  <p>Top Left</p>
+  <div style="height: 500px;background-color: darkblue;" class="bg-top-left bg-norepeat"></div>
+
+  <p>center top</p>
+  <div style="height: 500px;background-color: darkblue;" class="bg-center-top bg-norepeat"></div>
+  
+  <p>Center Center</p>
+  <div style="height: 500px;background-color: darkblue;" class="bg-center-center bg-norepeat"></div>
+  
+  <p>Center Bottom</p>
+  <div style="height: 500px;background-color: darkblue;" class="bg-center-bottom bg-norepeat"></div>
+  
+  <p>Right Bottom</p>
+  <div style="height: 500px;background-color: darkblue;" class="bg-right-bottom bg-norepeat"></div>
+
+  <!-- background attachment -->
+  <h1>Background Attachment</h1>
+  <p>Fixed</p>
+  <div style="height: 500px; background-color: darkblue;"   class="background-fixed" >
+  </div>
+    
+  <p>scroll</p>
+  <div style="height: 500px; background-color: darkblue;"
+  class="background-scroll"></div>
+
+  <h1>Background shorthand</h1>
+  <div style="height: 500px;" class="bg-shorthand"></div>
+  <br>
+  <hr>
+
+
+  <!-- table -->
+  <table class="table-1">
+    <h1>Table</h1>
+    <tr>
+      <th class="frame">name</th>
+      <th class="frame">age</th>
+      <th class="frame">Email</th>
+    </tr>
+    <tr>
+      <td class="frame">John doe</td>
+      <td class="frame">29</td>
+      <td class="frame">johndoe@gmail.com</td>
+    </tr>
+    <tr>
+      <td class="frame">Jane doe</td>
+      <td class="frame">52</td>
+      <td class="frame">janedoe@gmail.com</td>
+    </tr>
+  </table>  <br>
+
+  <table class="table-cell-show">
+    <tr>
+      <th class="frame2">name</th>
+      <th class="frame2">age</th>
+      <th class="frame2">Email</th>
+    </tr>
+    <tr>
+      <td class="frame2">John doe</td>
+      <td class="frame2">29</td>
+      <td class="frame2"></td>
+    </tr>
+    <tr>
+      <td class="frame2">Jane doe</td>
+      <td class="frame2">52</td>
+      <td class="frame2">janedoe@gmail.com</td>
+    </tr>
+  </table> <br>
+
+  <table class="table-cell-hide">
+    <tr>
+      <th class="frame3">name</th>
+      <th class="frame3">age</th>
+      <th class="frame3">Email</th>
+    </tr>
+    <tr>
+      <td class="frame3">John doe</td>
+      <td class="frame3">29</td>
+      <td class="frame3"></td>
+    </tr>
+    <tr>
+      <td class="frame3">Jane doe</td>
+      <td class="frame3">52</td>
+      <td class="frame3">janedoe@gmail.com</td>
+    </tr>
+  </table> <br>
+
+
+</body>
+
+</html>

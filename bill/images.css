@@ -1,0 +1,99 @@
+.w-25{
+    width: 25%;
+  }
+  
+  .w-100px{
+    width: 100px;
+  }
+  
+  .h-50{
+    height: 50%;
+  }
+  
+  .h-350px{
+    height: 350px;
+  }
+  
+  /*Background Image*/
+  .bg-img{
+    background-image: url(../images/beach.jpg);
+  }
+  
+  /*Background Repeat*/
+  .bg-no-repeat{
+    background-image: url(../images/dot.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  .bg-repeat-y{
+    background-image: url(../images/dot.jpg);
+    background-repeat: repeat-y;
+  }
+  
+  .bg-repeat-x{
+    background-image: url(../images/dot.jpg);
+    background-repeat: repeat-x;
+  }
+  
+  .bg-repeat{
+    background-image: url(../images/dot.jpg);
+    background-repeat: repeat; /* default value */
+  }
+
+  /*Background Cover*/
+  .bg-size-cover{
+    background-image: url(../images/beach.jpg);
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    border: solid 2px black;
+  }
+
+
+
+  .bg-size-contain{
+    background-image: url(../images/beach.jpg);
+    background-size: contain;
+  }
+  .bg-size-300px-400px{
+    background-image: url(../images/beach.jpg);
+    background-size: 300px 400px;
+    /* background-size: contain; */
+  }
+
+  .bg-top-left
+  {
+    background-position: top left;
+  }  
+  .bg-center-top 
+  {
+    background-position: center top;
+  }
+  .bg-center-center 
+  {
+    background-position: center center;
+  }
+  .bg-center-bottom 
+  {
+    background-position: center bottom;
+  }
+  .bg-right-top 
+  {
+    background-position: right top;
+  }
+
+  /* background attachment */
+
+  .background-fixed
+  {
+    background-attachment: fixed;
+  }
+  .background-scroll
+  {
+    background-attachment: scroll;
+  }
+  /* background shorthand */
+  .bg-shorthand
+  {
+    background: blue url('../images/dot.jpg') no-repeat scroll right;
+  }

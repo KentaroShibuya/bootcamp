@@ -1,0 +1,106 @@
+/* background-color */
+.salmon{
+  background-color: salmon;
+  width: 300px;
+  height: 360px;
+  color: white;
+}
+#bg{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+p{
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+/* margin padding border */
+h2{
+  border-bottom: 1px solid black;
+}
+.c1{
+  /* border width.style.color */
+  border: 2px dotted blue;
+  height: 100px;
+  width: 400px;
+  /* margin*/
+  margin-top: 20px;
+  margin-left: 50%;
+  margin-bottom: 50px;
+  /* padding */
+  padding-left: 60px;
+  padding-top: 100px;
+  /* border radius */
+  border-radius: 20px;
+}
+
+.overflow{
+  border: 6px inset red;
+  padding-right: 150px;
+  text-align: left;
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+  /* overflow */
+  /* overflow: hidden; */
+  overflow: scroll;
+}
+.div{
+  border: 4px double salmon;
+  padding: 50px;
+  width: 300px;
+  border-radius: 50px;
+  text-align: center;
+  /* 要素を左端に持ってくる方法 */
+  /* margin: 0; */
+  /* 要素を真ん中に持ってくる方法 */
+  /* margin: 0 auto; */
+  /* 要素を右端に持ってくる方法 */
+  /* margin: auto;
+  margin-right: 0; */
+  margin: 0 0 0 auto;
+}
+
+/* 14 */
+/* horizontal vertical blurred spread*/
+.box-shadow{
+  box-shadow: -10px -15px 9px 9px darkred;
+}
+
+/* box-sizing */
+.controlled-size{
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+}
+
+.content-box{
+  box-sizing: content-box; /* default value */
+  width: 250px;
+  height: 300px;
+  padding: 30px;
+}
+
+/* paddingを加えてもBoxsizing: border-box;が効いてるので250x300の中にpaddingが収まるように表示される */
+.border-box{
+  box-sizing: border-box;  
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+  padding: 30px;
+}
+
+
+/* centering */
+.text-align-center{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.block-center{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

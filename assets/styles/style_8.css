@@ -1,0 +1,82 @@
+/* 8typography CSS */
+/* CSS COLOR */
+
+/* imported font font-family: 'Oswald', sans-serif; /google fontsからのリンクコピーを貼付*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+.text-red{
+  color: red;
+}
+
+/* rgb  各色255がmax.value/ 全てが255＝色は白/ 全てが0＝色は黒 */
+.rgb{
+  color: rgb(0, 0, 255);
+}
+
+/* rgba + alphar= transparency */
+/* 1= 100% visible  0= not visible  .5= 50% visible */
+.rgba{
+  color:rgba(0, 0, 255, .5);
+}
+
+/* hexcode 検索したら色々調べられる */
+.hexcode{
+  color:#40E0D0;
+}
+
+/* font-family */
+.serif{
+  font-family: serif;
+}
+
+.sans-serif{
+  font-family:sans-serif;
+}
+
+.monospace{
+  font-family:monospace;
+}
+
+/* google fontsからimportしたfontを使う場合 
+最上位にimport元のURLを貼付け */
+/* propertyはgoogle fontsのCSS rules to specify familyをコピーして貼付*/
+.imported-font{
+  font-family:'Oswald', sans-serif;
+}
+
+/* font-size(property): unit valueは px,%,emで表現される */
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+/* font-size
+16px default size of CSS = 100%
+16px = 100% = 1em
+*/
+.percent-100 {
+  font-size: 100%;
+}
+
+.px-16 {
+  font-size: 16px;
+}
+
+.em1 {
+  font-size: 1em;
+}
+
+/* font-weight */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* 9 */

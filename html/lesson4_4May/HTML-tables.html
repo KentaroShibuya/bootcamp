@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>HTML Tables</title>
+</head>
+<body>
+  <!-- table -->
+  <!-- opening tag --> 
+  <!-- border="1"で枠線をつけられる  -->
+  <table border="1">
+    <!-- table row open -->
+    <tr>
+      <!-- header cell -->
+      <!-- th(header cell)は文字がBoldになる -->
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+    <!-- table row close -->
+    
+    <tr>
+      <!-- table data -->
+      <td>John Doe</td>
+      <td>39</td>
+      <td>johndoe@email.com</td>      
+    </tr>
+
+    <tr>
+      <td>John Doe</td>
+      <td>26</td>
+      <td>johndoe@email.com</td>      
+    </tr>
+  </table>
+  <!-- closing tag -->
+
+  <!-- using thead and tbody グループの識別がしやすいように -->
+  <table border="1">
+    <!-- table header -->
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+
+    <!-- table body -->
+    <tbody>
+      <tr>
+        <td>Peter</td>
+        <td>Parker</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td>Taylor</td>
+        <td>Swift</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Davis</td>
+        <td>M</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <!-- 横のセルを合体 colspan "x"繋げる数 tdにも使える-->
+      <th colspan="2">Contact Number</th>
+    </tr>
+    <tr>
+      <td>Michael</td>
+      <td>12345</td>
+      <td>67890</td>
+    </tr>
+    <tr>
+      <td>Jordan</td>
+      <td>12345</td>
+      <td>67890</td>
+    </tr>
+  </table>
+  
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <td>Bill</td>
+      <td>Steve</td>
+    </tr>
+    <tr>
+      <!-- 縦のセルを合体 rowspan  -->
+      <!-- 該当するtrに当たった時にrowspanを入れる -->
+      <th rowspan="2">Contact Numbers</th>
+      <td>12345</td>
+      <td>09876</td>
+    </tr>
+    <tr>
+      <td>67890</td>
+      <td>54321</td>
+    </tr>
+  </table>
+
+      <!-- テスト問題復習 -->
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="6">My work plan for the week</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <th rowspan="2">Activity</th>
+            <td>Meeting at room202</td>
+            <td>Business lunch at 1pm</td>
+            <td>Project due by 5PM</td>
+            <td>Web Conference</td>
+            <td>Early Finish(4PM)</td>
+          </tr>
+          <tr>
+            <td>Club practice</td>
+            <td>Meeting at 2PM</td>
+            <td>NONE</td>
+            <td>NONE</td>
+            <td>Submit report</td>
+          </tr>
+        </thead>
+      </table>
+
+</body>
+</html>

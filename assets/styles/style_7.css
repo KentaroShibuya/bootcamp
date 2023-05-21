@@ -1,0 +1,21 @@
+/* element selector */
+h2{
+  color: red;
+}
+
+/* universal selector / 全要素に適用 */
+*{
+  border:2px dotted gray;
+}
+
+/* class selector は "."で書き出す */
+.text-center{
+  text-align: center;
+}
+
+/* id selector は "#"で書き出す */
+#sub-heading{
+  color: green;
+  text-align: right;
+  background-color: gray;
+}

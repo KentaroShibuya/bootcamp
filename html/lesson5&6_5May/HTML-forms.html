@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <!-- form open tag  action= 送信されたデータどこに送るか、method=どのように送られるか  -->
+  <form action="#" method="#">
+    
+    <!-- text input -->
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" id="first_name" placeholder="John">  <!-- placeholder 記入例の上から入力できる -->
+
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" id="last_name" value="Doe">   <!-- value 記入例に上書きできない。消す必要あり -->
+    <br><br>
+
+    <!-- password input -->
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" name="confirm_password" id="confirm_password">
+    <br><br>
+
+    <!-- number input -->
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="10">   <!-- min *min,maxは併記可能-->
+
+    <label for="num_siblings">Number of Siblings</label>
+    <input type="number" name="num_siblings" id="num_siblings" max="5">  <!-- max -->
+    <br><br>
+
+    <!-- date input -->
+    <label for="birth_date">Birth Date</label>
+    <input type="date" name="birth_date" id="birth_date" required>  <!-- required = 記入必須項目 -->
+    <br><br>
+
+    <!-- email input -->
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+
+    <!-- text area 要素を作る -->
+    <label for="comments">Comments</label>
+    <br>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+    <br>
+
+    <label for="bio">Bio</label>
+    <br>
+    <textarea name="bio" id="bio" cols="20" rows="5"></textarea>
+    <br><br>
+
+    <!-- radio button  nameは選択肢内で統一必要-->
+    <p>please select your favourite music genre:</p>
+    <input type="radio" name="music" id="rock" value="rock">
+    <label for="rock">Rock</label>
+
+    <input type="radio" name="music" id="pop" value="pop">
+    <label for="pop">Pop</label>
+
+    <input type="radio" name="music" id="jazz" value="jazz">
+    <label for="jazz">Jazz</label>
+    <br><br>
+
+    <!-- checkbox -->
+    <p>please select your favourite food:</p>
+    <input type="checkbox" name="food" id="ramen" value="ramen">
+    <label for="ramen">Ramen</label>
+
+    <input type="checkbox" name="food" id="sushi" value="sushi">
+    <label for="sushi">Sushi</label>
+
+    <input type="checkbox" name="food" id="curry" value="curry">
+    <label for="curry">Curry</label>
+    <br><br>
+
+    <!-- dropdown -->
+    <!-- labelをspanとかに変えるとダメなのか？ -->
+    <label for="device">What is your device?</label>
+    <select name="device" id="device">
+      <option value="macbook">Macbook</option>
+      <option value="ipad">ipad</option>
+      <option value="iphone">iphone</option>
+    </select>
+    <br><br>
+
+    <!-- multiple view select -->
+    <label for="car">Select a car</label>
+    <select name="car" id="car" multiple>   <!-- multipleを書き加えることで選択肢の複数表示が可能 -->
+      <option value="toyota">Toyota</option>
+      <option value="nissan">Nissan</option>
+      <option value="honda">HONDA</option>
+      <option value="ford">Ford</option>
+      <option value="ferrari">Ferrari</option>
+    </select>
+    <br><br>
+
+    <!-- file input -->
+    <label for="picture">Select your picture</label>
+    <input type="file" name="picture" id="picture">
+    <br><br>
+
+    <!-- submit button 2種類 -->
+    <!-- 付ける機能によって使い分ける。buttonが使いやすい-->
+    <input type="submit" value="submit" name="submit">
+    <button type="submit" name="btn_submit">Btn Submit</button>
+
+
+
+  </form>
+  <!-- form close tag -->
+</body>
+</html>

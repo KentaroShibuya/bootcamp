@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Activity4</title>
+</head>
+<!-- 課題の内容は5,6のスクリーンショットに入ってる -->
+<body>
+  <!-- opening tag -->
+  <form action="">
+  <!-- table formed text input -->
+  <table>
+    <tr>
+      <th colspan="6"><p>Please fill this servey form</p></th>
+    </tr>
+    <tr>
+     <td>First Name:</td>
+     <td><input type="text" name="firstname" id="firstname"></td>
+     <td>MI:</td>
+     <!-- box size can adjust with size attribute -->
+     <td><input type="text" name="mi" id="mi" size="6"></td>
+     <td>Last Name:</td>
+     <td><input type="text" name="lastname" id="lastname"> </td>
+    </tr>
+    <tr>
+      <td>City:</td>
+      <td><input type="text" name="city" id="city"></td>
+      <td>State:</td>
+      <td><input type="text" name="state" id="state"></td>
+      <td>Zip Code:</td>
+      <td><input type="text" name="zipcode" id="zipcode"></td>
+    </tr>
+  </table>
+
+  <!-- checkbox nameの名前揃えないといけない -->
+  <p>Choose a Sport:</p>
+  <input type="checkbox" name="sport" id="basketball" value="basketball">
+  <label for="basketball">Basketball</label>
+
+  <input type="checkbox" name="sport" id="football" value="football">
+  <label for="football">Football</label>
+
+  <input type="checkbox" name="sport" id="hockey" value="hockey">
+  <label for="hockey">Hockey</label>
+
+  <!-- radio button nameの名前揃えないといけない-->
+  <p>Choose a Year:</p>
+  <input type="radio" name="yearlevel" id="freshman" value="freshman">
+  <label for="freshman">Freshman</label>
+
+  <input type="radio" name="yearlevel" id="sophomore" value="sophomore">
+  <label for="sophomore">Sophomore</label>
+
+  <input type="radio" name="yearlevel" id="junior" value="junior">
+  <label for="junior">Junior</label>
+
+  <input type="radio" name="yearlevel" id="senior" value="senior">
+  <label for="senior">Senior</label>
+
+  <!-- multiple view select -->
+  <p>Choose your favourite food:</p>
+  <select name="snacks" id="snacks" multiple>
+    <option value="chips">Chips</option>
+    <option value="pizza">Pizza</option>
+    <option value="nachos">Nachos</option>
+  </select>
+  <br>
+  <!-- textbox -->
+  <textarea name="comments" id="comments" cols="25" rows="6" placeholder="Please let us know your comments"></textarea>
+  <br>
+  <!-- submit button -->
+  <button type="submit" name="send_it">Send it</button>
+  <!-- clearの時はtypeをresetにする -->
+  <button type="reset" name="clear_it">Clear it</button>
+</form>
+<!-- closing tag -->
+  
+</body>
+</html>

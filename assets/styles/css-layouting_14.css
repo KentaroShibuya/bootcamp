@@ -1,0 +1,29 @@
+.float-left{
+  border: 1px solid black;
+  float: left;
+}
+
+.float-right{
+  border: 1px solid black;
+  float: right;
+}
+
+.float-none{
+  border: 1px solid black;
+  float: none;  /* default value */
+}
+
+.clear-left{
+  clear: left;
+}
+.clear-right{
+  clear: right;
+}
+.clear-both{
+  clear: both;
+}
+.clear-none{
+  clear: none; /*default value*/
+}
+
+/* 15 */

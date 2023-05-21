@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS introduction1</title>
+  
+  <!-- external css / CSSシートに繋ぐ hrefにcssファイルのrelative pathをペースト ../を頭につけることで強制的にParent folderを指定できる-->
+  <link rel="stylesheet" href="../bootcamp/assets/styles/style_7.css">
+  <!-- <link rel="stylesheet" href="assets/styles/style1.css">  -->
+  
+  <!-- internal css / style element-->
+  <style>
+    p{
+     color: white;
+     background-color: darkgreen;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- inline css / style attribute-->
+  <h1 style="color: blue;">Hello World!</h1>
+
+  <!-- internaal css / headにstyle要素、この場合は全てのpタグが対象 -->
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laborum ex qui! Eius, ab architecto asperiores tenetur sequi, eligendi sit accusamus vero temporibus adipisci voluptatem nobis aut. Nesciunt, cumque voluptatibus!</p>
+
+  <!-- class attribute -->
+  <h2 class="text-center">Sub-heading</h2>
+
+  <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui fugit non error, unde maiores nam voluptates adipisci! Ex, impedit nemo quidem eligendi iste accusamus aperiam, mollitia, tempora eaque maxime unde.</p>
+
+  <h2 class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, expedita? Earum nesciunt, possimus eveniet fugiat cumque exercitationem ullam, cupiditate fuga libero dolores eos fugit voluptatibus sapiente hic, ab consequuntur quibusdam.</h2>
+
+  <!-- id attribute -->
+  <h2 id="sub-heading">Sub-heading 2</h2>
+  
+  
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* list-style-type*/
+/* unordered list */
+#ls-disc {
+  list-style-type: disc;
+}
+
+#ls-circle {
+  list-style-type: circle;
+}
+
+#ls-square {
+  list-style-type: square;
+}
+
+/* ordered list */
+.decimal {
+  list-style-type: decimal-leading-zero;
+}
+
+.upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.upper-roman {
+  list-style-type: upper-roman;
+}
+
+.lower-roman {
+  list-style-type: lower-roman;
+}
+
+/* list style position */
+.ul-outside {
+  list-style-position: outside;
+}
+
+.ul-inside {
+  list-style-position: inside;
+}
+
+/* list-style: style-type, style-positionで短縮化ができる */
+#ls {
+  list-style: upper-alpha outside;
+}
+
+/* background-image:url('images/image.jpg') */
+.bg-image {
+  background-image: url('../images/staricon.png');
+  height: 300px;
+  border: 2px solid black;
+}
+
+/* background-repeat*/
+#bgtitle {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.bg-norepeat {
+  background-image: url('../images/staricon.png');
+  height: 300px;
+  border: 2px solid black;
+  background-repeat: no-repeat;
+}
+
+.repeat-y {
+  background-image: url('../images/staricon.png');
+  height: 300px;
+  border: 2px solid black;
+  background-repeat: repeat-y;
+}
+
+.repeat-x {
+  background-image: url('../images/staricon.png');
+  height: 300px;
+  border: 2px solid black;
+  background-repeat: repeat-x;
+}
+
+.repeat {
+  background-image: url('../images/staricon.png');
+  height: 300px;
+  border: 2px solid black;
+  background-repeat: repeat;
+}
+
+/* background-size */
+.bgsize-auto {
+  color: white;
+  background-image: url('../images/beach.jpg');
+  border: 2px solid black;
+  background-size: auto;
+  height: 800px;
+  /* width: 700px; */
+  /* 画像を元のサイズのまま表示する指定。要素より画像が小さい場合、要素全体に画像が繰返し表示 */
+}
+
+.bgsize-cover {
+  color: white;
+  background-image: url('../images/beach.jpg');
+  border: 2px solid black;
+  background-size: cover;
+  height: 300px;
+  width: 500px;
+  /* 要素のサイズに合わせて背景画像を引き伸ばしたり、切り取ったりする指定  画像より要素が小さい場合、入りきらない画像は部分的に切り取られる*/
+}
+
+.bgsize-contain {
+  color: white;
+  background-image: url('../images/beach.jpg');
+  border: 2px solid black;
+  background-size: contain;
+  height: 800px;
+  width: 900px;
+  /* 背景画像を要素の幅に合わせて表示 要素が画像よりも大きい場合、画像を要素内に繰返し表示 */
+}
+
+/* .bg-size-contain{
+  background-image: url('../images/beach.jpg');
+  background-size: contain;
+}
+.bg-size-300px-400px{
+  background-image: url('../images/beach.jpg');
+  background-size: 300px 400px;
+} */
+
+
+/* background-position */
+.bg-top-left {
+  background-position: top left;
+}
+
+.bg-center-top {
+  background-position: center top;
+}
+
+.bg-center-center {
+  background-position: center center;
+}
+
+.bg-center-bottom {
+  background-position: center bottom;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+/* background-attachment */
+.background-fixed {
+  background-image: url('../images/beach.jpg');
+  background-attachment: fixed;
+}
+
+.background-scroll {
+  background-image: url('../images/beach.jpg');
+  background-attachment: scroll;
+}
+
+/* background shorthand
+   background: color image repeat attachment position*/
+.bg-shorthand {
+  background: blue url('../images/beach.jpg') no-repeat scroll right;
+}
+
+
+
+
+/* table */
+.table-1,.frame{
+  border: solid 1px orangered;
+}
+/* htmlで習ったborder="1"という枠と同じ。CSSの方が色など柔軟なデザインが可能 th•tdを入れないと中の枠線は入らない */
+
+/* empty-cells show */
+/* border-collapse collapse or separate */
+.table-cell-show, .frame2 {
+  border: solid 1px green ;
+  empty-cells: show ;
+  border-collapse: collapse;
+  /* border-spacing: 15px; */
+}
+/* border-collapse separateはデフォルト */
+
+/* empty-cells hide */
+/* border-spacing horizontal space, vertical space */
+.table-cell-hide,.frame3 {
+  border: solid 1px blue;
+  empty-cells: hide;
+  border-spacing: 25px 15px;
+}
