@@ -56,8 +56,7 @@ h2{
   /* 要素を真ん中に持ってくる方法 */
   /* margin: 0 auto; */
   /* 要素を右端に持ってくる方法 */
-  /* margin: auto;
-  margin-right: 0; */
+  /* margin: auto; margin-right: 0; */
   margin: 0 0 0 auto;
 }
 
@@ -91,7 +90,7 @@ h2{
 }
 
 
-/* centering */
+/* centering content */
 .text-align-center{
   border: 1px solid black;
   text-align: center;
