@@ -10,7 +10,7 @@
 
 .float-none{
   border: 1px solid black;
-  float: none;  /* default value */
+  float: none;  /*default value*/
 }
 
 .clear-left{
@@ -26,4 +26,83 @@
   clear: none; /*default value*/
 }
 
+
 /* 15 */
+/* Position */
+/* relative  元の位置を基準にtop50px left50pxの位置を指定 移動後も元の位置の高さはキープされる*/
+.box{
+  position: relative; 
+  top: 30px;
+  left: 30px; 
+}
+/* absolute  親要素を基準に絶対的な位置を決める 親要素をrelativeやfixedを指定した要素に指定していない場合は画面の左上を基準*/
+.box2{
+  position: absolute; 
+  top: 30px; 
+  left: 30px;
+}
+
+/* relative,absoluteのセット　親要素を基準に絶対的な位置を決める　親が動けば一緒に動く*/
+.parent {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.absolute {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  /* z-indexを使い重なりの上下を指定できる 指定しないとPositionを適用してるものが上に来る　-1は1段下にまわる */
+  z-index: -1;
+}
+
+/* fixed */
+p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.fixed {
+  color: white;
+  position: fixed; 
+  top: 10px; 
+  left: 1200px; 
+}
+
+/* display: block, inline, inline-block */
+/* block */
+/* text align　だめ 要素の中の文字だけ真ん中に*/
+.block div{
+  border: 1px solid #000;
+  height: 60px;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+}
+.block{
+  text-align: center;
+}
+
+/* inline */
+/* width, height だめ 文字サイズ通り */
+/* 上下余白 だめ*/
+.inline a{
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 20px;
+}
+.inline{
+  text-align: center;
+}
+
+
+.inline-block p{
+  display: inline-block;
+  border: 1px solid #000;
+  height: 60px;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+}
+.inline-block{
+  text-align: center;
+}
